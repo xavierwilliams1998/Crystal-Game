@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <div class="container">
+                <h1 class ="text-center">Crystal Collector Game</h1>
+            </div>
+        </div>
+
+        <!-- Instructions -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-primary">
+                    <div class ="panel-heading">
+                        <h3 class="panel-title text center">Instructions</h3>
+                    </div>
+                    <div class="panel-body">
+                        <p><strong>You will be given a random number at the start of the game.There will be exactly 4 crystals. By clicking on one of the crystal it wil give you a random value to add to your total score. You win the game by matching your total score to the  random number shown.You lose if your total score is above the random number.The value of eeach individual crystal has a random number.Each time the game starts the value of each crystal will change.</strong></p>
+                    </div>
+                </div>
+            </div>
+
+
+                <!-- My score -->
+                <div class="col-lg-3">
+                    <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text center">My Score</h3>
+                    </div>
+                <div class="panel-body">
+                    <h3 class="text center" id="my-score"></h3>
+                </div>
+        </div>
+        </div>
+
+        <!-- marker score -->
+        <div class="col-lg-3">
+                <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title text center">Marker Score</h3>
+                </div>
+            <div class="panel-body">
+                <h3 class="text center" id="marker-score"></h3>
+            
+        </div>
+    </div>
+    </div>
+
+
+    <!-- Crystals Section -->
+
+    <div class="col-lg-6">
+        <div class="panel panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title text center">Crystal Selection</h3>
+            </div>
+            <div class="panel-body text-center">
+                <img src="assets/images/red.jpeg" alt="" id="red">
+                <img src="assets/images/Blue.jpeg" alt="" id="blue">
+                <img src="assets/images/green.jpeg" alt="" id="green">
+                <img src="assets/images/yellow .jpeg" alt="" id="yellow">
+        
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <!-- Counter Row  -->
+    <div class="row">
+        <!-- Win Count -->
+        <div class="col-lg-6">
+            <div class="panel-panel-primary">
+                <div class ="panel-heading">
+                    <h3 class="panel-title text center">Win Count</h3>
+                </div>
+                <div class="panel-body">
+                    <h3 class="text-center" id="win-count">0</h3>
+                </div>
+            </div>
+        </div>
+
+
+ <!-- loser Count -->
+ <div class="col-lg-6">
+        <div class="panel-panel-primary">
+            <div class ="panel-heading">
+                <h3 class="panel-title text center">Loser Count</h3>
+            </div>
+            <div class="panel-body">
+                <h3 class="text-center" id="loser-count">0</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+   <script src="crystal.js"></script>
+</body>
+</html>
